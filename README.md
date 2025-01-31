@@ -59,7 +59,20 @@ Right click on the newly created user and select "Properties". In Properties cli
 
 **Join Client-1 VM to DC-1 domain**
 
-Log in to Client-1 VM as the local admin user 
+Log in to Client-1 VM as the local admin user then right click the start menu and click System. Click "Rename this PC (advanced)" to open System Properties, select "Change". Click Domain in "Member of" and input your domain name, click OK. Security will prompt you to input your **DC-1** local admin user account.
+
+
+![11](https://github.com/user-attachments/assets/81ed9556-bf70-48ae-a4ed-decf53e406f9)
+![12](https://github.com/user-attachments/assets/0d1a1940-8410-4e77-988d-b71cc3f08124)
+
+We can check the AD of DC-1 and see if the client has successfully joined. Log into DC-1 and open Active Directory Users and Computers. Expand Domain -> click Computers, here we see that our client has successfully connected with our domain controller!
+
+![14](https://github.com/user-attachments/assets/ab155562-2e8b-45ab-a6d0-661acc3ce13e)
+
+For organizational purposes we can create a new OU and name it "_CLIENTS", we can then move Client 1 to the created OU.
+
+![16](https://github.com/user-attachments/assets/73038f02-186b-4f8f-a281-9cf9a3224a84)
+
 
 
 

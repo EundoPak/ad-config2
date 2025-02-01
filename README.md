@@ -30,7 +30,7 @@ Select Add Roles and Features and start the AD installation. Click next until yo
 ![1](https://github.com/user-attachments/assets/0554de78-228f-40ce-aa30-ec5e7b954048)
 ![2](https://github.com/user-attachments/assets/89d841dc-549b-433d-b770-90932677e233)
 
-**Promote the server to a Domain Controller**
+<h2>Promote the server to a Domain Controller</h2>
 
 Click on the flag and select "Promote this server to a domain controller". In "Deployment Configuration", select "Add a new forest" and input a domain name, remember the name as it will be needed to log in later and click next. In "Domain  Controller Options" we can configure our DSRM password, we won't be using this password unless we break something using Active Directory, click next until "Prerequisites Check". Finally click "Install", after the first installation click "Install" again to finalize your Active Directory. (The VM will restart)
 ![3](https://github.com/user-attachments/assets/0f9348b1-26a8-4f14-a6e3-d97983e236c7)
@@ -38,7 +38,7 @@ Click on the flag and select "Promote this server to a domain controller". In "D
 ![5](https://github.com/user-attachments/assets/c2d7c1b7-efe7-4bf3-aee5-9fb4c4f383ed)
 ![6](https://github.com/user-attachments/assets/39e28899-2086-491c-a350-c822aead8c1c)
 
-**Creating an Organizational Unit (OU)**
+<h2>Creating an Organizational Unit (OU)</h2>
 
 Right click on your domain and click New -> click Organizational Unit, add 2 OUs, "_EMPLOYEES" & "_ADMINS".
 
